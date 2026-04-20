@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+h2 {
+    text-align: center;
+    background-color: #faaecd;
+    padding: 15px;
+}
+
+h3 {
+    background-color: #faaecd;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 40%;
+    background: #ffc3db;
+    padding: 20px;
+}
+
+.right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+    display: none;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    color: rgb(170, 0, 255);
+}

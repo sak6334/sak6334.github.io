@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shyza's Portfolio</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="left">
+    <h2>Shyza's Portfolio</h2>
+
+    <h3>Practice Activities</h3>
+    <a onclick="showImage('p1')">Practice 1</a>
+    <a onclick="showImage('p2')">Practice 2</a>
+    <a onclick="showImage('p3')">Practice 3</a>
+
+    <h3>Partner Labs</h3>
+    <a onclick="showImage('pl1')">Partner Lab 1</a>
+    <a onclick="showImage('pl2')">Partner Lab 2</a>
+
+    <h3>Assignments</h3>
+    <a onclick="showImage('a1')">Assignment 1</a>
+    <a onclick="showImage('a2')">Assignment 2</a>
+    <a onclick="showImage('a3')">Assignment 3</a>
+    <a onclick="showImage('a4')">Final Project</a>
+  </div>
+
+
+  <div class="right">
+
+  <a href="http://127.0.0.1:5500/Practice%20Activity%201%20(Simple%20Web%20Page)/index.html">
+    <img id="p1" src="practice activity 1 screenshot.PNG">
+  </a>
+
+  <a href="practice2/index.html">
+    <img id="p2" src="">
+  </a>
+
+  <a href="practice3/index.html">
+    <img id="p3" src="">
+  </a>
+
+  <a href="http://127.0.0.1:5500/Lesson%204%20Partner%20Lab1/index.html">
+    <img id="pl1" src="partner lab 1 screenshot.png">
+  </a>
+
+  <a href="http://127.0.0.1:5500/PartnerLab2/index.html">
+    <img id="pl2" src="partner lab 2 screenshot.png">
+  </a>
+
+  <a href="http://127.0.0.1:5500/Lesson6_IndividualAssignment/index.html">
+    <img id="a1" src="individual assignment 1 screenshot.png">
+  </a>
+
+  <a href="http://127.0.0.1:5500/Lesson7_IndividualAssignment/index.html">
+    <img id="a2" src="individual assignment 2 screenshot.png">
+  </a>
+
+  <a href="assignment3/index.html">
+    <img id="a3" src="">
+  </a>
+
+  <a href="http://127.0.0.1:5500/IndividualAssignment4%20(final%20project)/index.html">
+    <img id="a4" src="final project temporary screenshot.png">
+  </a>
+
+</div>
+
+<script>
+function showImage(id) {
+  let images = document.querySelectorAll("img");
+  images.forEach(img => img.style.display = "none");
+
+  document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
